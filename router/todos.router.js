@@ -1,10 +1,13 @@
 import Todo from "../schemas/todo.schema.js";
 import Joi from "joi";
+import express from "express";
 
 // 할 일 생성 API의 요청 데이터 검증을 위한 Joi 스키마를 정의합니다.
 const createTodoSchema = Joi.object({
   value: Joi.string().min(1).max(50).required(),
 });
+
+const router = express.Router();
 
 /** 에러 핸들러 **/
 router.post("/todos", async (req, res, next) => {

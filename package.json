@@ -5,6 +5,7 @@
   "repository": "https://github.com/DalTube/Camp_Todos",
   "author": "EuiJoong <euijki87@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "express": "^4.21.1",
     "joi": "^17.13.3",
